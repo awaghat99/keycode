@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <h1 id="heading">Javascript Keycode</h1>
+        <div id="heading-holder">
+            <h2>Press any Key to get the JavaScript event keycode info</h2>
+        </div>
+        <h2 id="keypressInfo"></h2>
+        <div id="boxHolder">
+            <div id="key" class="descBox">
+                <h3 class="boxTitle">event.key</h3>
+                <h3 class="info" id="keyText">B</h3>
+                <p>
+                    The value of the key pressed. Accounts for modifiers keys that return CAPS
+                    and alternate chars.
+                </p>
+            </div>
+            <div id="code" class="descBox">
+                <h3 class="boxTitle">event.code</h3>
+                <h3 class="info" id="codeText">B</h3>
+                <p>The physical key on the keyboard. Doesn't care if you are holding a modifier like Shift.</p>
+            </div>
+            <div id="which" class="descBox">
+                <h3 class="boxTitle">event.which</h3>
+                <h3 class="info" id="whichText">B</h3>
+                <p>event.which and event.keyCode are deprecated in modern browsers. Use .key or .code instead.</p>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
